@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Code+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css?family=VT323&display=swap');
+@font-face
+{
+    font-family: cascadia;
+    src: url("fonts/cascadia.ttf");
+}
+body
+{
+    /* background-color: #1d2e1f;
+    background-image: repeating-linear-gradient(rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0.2),#1c2619  102% ); 
+     */
+    background-color: #1d2e1f;
+    background-image: repeating-radial-gradient(rgba(0, 0, 255, 0.2), rgba(0, 0, 255, 0.2),#1c2619  102% );
+    height: 200vh;
+    display: block; /* */
+    /*margin: 0px;*/ /* rhs margin on the page */
+    font-size: 15pt;
+    text-shadow: 0 0 3px;
+
+    /* DEBUG VARIABLES */
+    border: 0px solid rgb(255, 255, 0);
+  }
+
+#title
+{
+    color: rgba(255, 255, 255, 255);
+    font-family: 'VT323', 'monospace'; /* font family */
+    font-size: 60pt; /* size of the font */
+    margin: -25px auto; /* vertical margin from top, horizontal centering (using auto) */
+    width: max-content; /* Takes up full width of screen */
+
+    /* DEBUG VARIABLES */
+    border: 0px solid rgb(149, 255, 0);
+}  
+h5 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; }
