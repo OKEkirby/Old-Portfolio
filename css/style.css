@@ -17,6 +17,8 @@
     --second-bg-color: #323946;
     --text-color: #fff;
     --main-color: #0ef;
+    --sidebar-width: 30rem;
+    --sidebar-padding: 3.5rem;
 }
 
 html{
@@ -36,14 +38,14 @@ body{
 /* The sidebar menu */
 .sidebar {
     height: 100%; /* Full-height: remove this if you want "auto" height */
-    width: 30rem; /* Set the width of the sidebar */
+    width: var(--sidebar-width); /*set with JS*/
+    padding: var(--sidebar-padding); /*set with js*/
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
     z-index: 100; /* Stay on top */
     top: 0; /* Stay at the top */
     left: 0;
     background-color: #111; /* Black */
     overflow-x: hidden; /* Disable horizontal scroll */
-    padding: 3.5rem;
     display:flex;
     flex-direction: column;
     justify-content:space-between;
@@ -80,6 +82,27 @@ body{
     display: block;
   }
 
+  .sidebar-button-container {
+    height: 100%; 
+    width: 3rem;
+  
+    font-size: 20px;
+    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 101; /* Stay on top */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    border: none;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    width: fit-content;
+  }
+
+  .sidebar-button{
+    height: 8%;
+    cursor: pointer;
+    
+  }
+
   .link-icons{
     width: 100%;
     display: flex;
@@ -96,8 +119,8 @@ body{
   
   /* Style page content */
   .main {
-    margin-left: 30rem; /* Same as the width of the sidebar */
-    padding: 0px 10px;
+    margin-left: var(--sidebar-width); /* set with JS */
+    padding: 0px 0px;
   }
 
 

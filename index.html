@@ -17,13 +17,15 @@
 
     <!--CSS-->
     <link rel="stylesheet" href="css/style.css" />
+
+    
 </head>
 
 <body>
 
 
     <!-- Side navigation -->
-    <div class="sidebar">
+    <div class="sidebar" id = "sidebar-id">
         <div>
             <h1>William Parkin</h1>
             <h2>Programming<br>Tools<br>Shaders<br>Generalist</h2>
@@ -32,19 +34,28 @@
         </div>
         
         
-        
+    
         <div class="link-icons">
             <a href="https://github.com/OKEkirby"> <i class='bx bxl-github' id = "github-icon"></i> </a>
             <a href="https://twitter.com/okie_kirby"> <i class='bx bxl-twitter' id = "twitter-icon" ></i> </a>
             <a href="mailto:willparkin1@gmail.com"> <i class='bx bx-envelope' id = "email-icon"  ></i> </a>
             <a href=""> <i class='bx bxl-linkedin' id = "linkedin-icon"  ></i> </a>
         </div>
+
+        
+         
+        
         
     </div>
     
     <!-- Page content -->
-    <div class="main">
+    <div class="main" id = "main-id">
     
+        <div class="sidebar-button-container">
+            <button class="sidebar-button"  onclick="openCloseNav()">☰ Open</button>  
+        </div>
+       
+
         <header class="header">
             <nav class="navbar">
                 <a href="#projects" class = "active">Projects</a>
@@ -56,6 +67,7 @@
 
     </div>
 
-    
+    <!--JS-->
+    <script src="js/script.js"></script>
 
 </body>
